@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <!-- 引入 echarts.js -->
+    <script src="echarts.js"></script>
+    <script src="macarons.js"></script>
+
+</head>
+<body>
+    
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main" style="width: 1200px;height:400px;"></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'),'macarons');
+
+        // 指定图表的配置项和数据
+        option = {
+            title: {
+                text: 'Frequency of Functions Distrubution'
+            },
+            tooltip: {
+                trigger: 'axis'
+            },
+            legend: {
+                data:['Instant messaging','Making a call1','Mobile payment','Alarm','Weather','Web Search','Camera','Music','Messages','Calculator','Maps','Settings','Apps','Flashlight','Video calls','Notes','Restaurant','Ride sharing','Stocks','Sports','Calendar','Q&A','Reminders','Email','Translation']
+                width: 800
+            },
+            grid: {
+                left: '3%',
+                right: '4%',
+                bottom: '3%',
+                containLabel: true
+            },
+            toolbox: {
+                feature: {
+                    saveAsImage: {}
+                }
+            },
+            xAxis: {
+                type: 'category',
+                boundaryGap: false,
+                data: ['5','4','3','2','1','0']
+            },
+            yAxis: {
+                type: 'value'
+            },
+            series: [
+                {
+                    name:'Instant messaging',
+                    type:'line',
+                    data:[444, 23, 4, 0, 2, 149]
+                },
+                {
+                    name:'Making a call1',
+                    type:'line',
+                    data:[405, 95, 17, 8, 10, 87]
+                },
+                {
+                    name:'Mobile payment',
+                    type:'line',
+                    data:[325, 107, 40, 32, 13, 105]
+                },
+                {
+                    name:'Alarm',
+                    type:'line',
+                    data:[323, 54, 16, 10, 9, 210]
+                },
+                {
+                    name:'Weather',
+                    type:'line',
+                    data:[287, 94, 18, 8, 3, 212]
+                },
+                {
+                    name:'Web Search',
+                    type:'line',
+                    data:[268, 49, 14, 3, 2, 286]
+                },
+                {
+                    name:'Camera',
+                    type:'line',
+                    data:[257, 166, 60, 31, 9, 99]
+                },
+                {
+                    name:'Music',
+                    type:'line',
+                    data:[244, 92, 36, 19, 6, 225]
+                },
+                {
+                    name:'Messages',
+                    type:'line',
+                    data:[187, 67, 21, 30, 34, 283]
+                },
+                {
+                    name:'Calculator',
+                    type:'line',
+                    data:[93, 79, 54, 68, 25, 303]
+                },
+                {
+                    name:'Maps',
+                    type:'line',
+                    data:[57, 97, 98, 59, 39, 272]
+                },
+                {
+                    name:'Settings',
+                    type:'line',
+                    data:[134, 28, 12, 16, 11, 421]
+                },
+                {
+                    name:'Apps',
+                    type:'line',
+                    data:[173, 42, 35, 36, 10, 326]
+                },
+                {
+                    name:'Stocks',
+                    type:'line',
+                    data:[59, 8, 4, 2, 7, 542]
+                },
+                {
+                    name:'Sports',
+                    type:'line',
+                    data:[41, 10, 5, 7, 3, 556]
+                },
+                {
+                    name:'Calendar',
+                    type:'line',
+                    data:[46, 16, 12, 7, 6, 535]
+                },
+                {
+                    name:'Q&A',
+                    type:'line',
+                    data:[38, 17, 9, 5, 7, 546]
+                },
+                {
+                    name:'Flashlight',
+                    type:'line',
+                    data:[117, 64, 45, 27, 25, 344]
+                },
+                {
+                    name:'Video calls',
+                    type:'line',
+                    data:[93, 73, 43, 36, 22, 355]
+                },
+                {
+                    name:'Notes',
+                    type:'line',
+                    data:[62, 58, 53, 19, 16, 414]
+                },
+                {
+                    name:'Restaurant',
+                    type:'line',
+                    data:[45, 74, 50, 38, 15, 400]
+                },
+                {
+                    name:'Ride sharing',
+                    type:'line',
+                    data:[25, 51, 62, 59, 23, 402]
+                },
+                {
+                    name:'Reminders',
+                    type:'line',
+                    data:[46, 38, 23, 20, 14, 481]
+                },
+                {
+                    name:'Email',
+                    type:'line',
+                    data:[48, 35, 27, 21, 19, 472]
+                },
+                {
+                    name:'Translation',
+                    type:'line',
+                    data:[37, 36, 24, 15, 6, 504]
+                }
+            ]
+        };        
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+
+    
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="class1" style="width: 1200px;height:400px;"></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('class1'),'macarons');
+
+        // 指定图表的配置项和数据
+        option = {
+            title: {
+                text: 'Class 1 Functions'
+            },
+            tooltip: {
+                trigger: 'axis'
+            },
+            legend: {
+                data:['Instant messaging','Making a call1','Mobile payment','Alarm']
+            },
+            grid: {
+                left: '3%',
+                right: '4%',
+                bottom: '3%',
+                containLabel: true
+            },
+            toolbox: {
+                feature: {
+                    saveAsImage: {}
+                }
+            },
+            xAxis: {
+                type: 'category',
+                boundaryGap: false,
+                data: ['5','4','3','2','1','0']
+            },
+            yAxis: {
+                type: 'value'
+            },
+            series: [
+                {
+                    name:'Instant messaging',
+                    type:'line',
+                    data:[444, 23, 4, 0, 2, 149]
+                },
+                {
+                    name:'Making a call1',
+                    type:'line',
+                    data:[405, 95, 17, 8, 10, 87]
+                },
+                {
+                    name:'Mobile payment',
+                    type:'line',
+                    data:[325, 107, 40, 32, 13, 105]
+                },
+                {
+                    name:'Alarm',
+                    type:'line',
+                    data:[323, 54, 16, 10, 9, 210]
+                }
+            ]
+        };        
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+
+     <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="class2" style="width: 1200px;height:400px;"></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('class2'),'macarons');
+
+        // 指定图表的配置项和数据
+        option = {
+            title: {
+                text: 'Class 2 Functions'
+            },
+            tooltip: {
+                trigger: 'axis'
+            },
+            legend: {
+                data:['Weather','Web Search','Camera','Music','Messages','Calculator','Maps']
+            },
+            grid: {
+                left: '3%',
+                right: '4%',
+                bottom: '3%',
+                containLabel: true
+            },
+            toolbox: {
+                feature: {
+                    saveAsImage: {}
+                }
+            },
+            xAxis: {
+                type: 'category',
+                boundaryGap: false,
+                data: ['5','4','3','2','1','0']
+            },
+            yAxis: {
+                type: 'value'
+            },
+            series: [
+                {
+                    name:'Weather',
+                    type:'line',
+                    data:[287, 94, 18, 8, 3, 212]
+                },
+                {
+                    name:'Web Search',
+                    type:'line',
+                    data:[268, 49, 14, 3, 2, 286]
+                },
+                {
+                    name:'Camera',
+                    type:'line',
+                    data:[257, 166, 60, 31, 9, 99]
+                },
+                {
+                    name:'Music',
+                    type:'line',
+                    data:[244, 92, 36, 19, 6, 225]
+                },
+                {
+                    name:'Messages',
+                    type:'line',
+                    data:[187, 67, 21, 30, 34, 283]
+                },
+                {
+                    name:'Calculator',
+                    type:'line',
+                    data:[93, 79, 54, 68, 25, 303]
+                },
+                {
+                    name:'Maps',
+                    type:'line',
+                    data:[57, 97, 98, 59, 39, 272]
+                }
+            ]
+        };        
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="class3-0" style="width: 1200px;height:400px;"></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('class3-0'),'macarons');
+
+        // 指定图表的配置项和数据
+        option = {
+            title: {
+                text: 'Frequency of Functions Distrubution'
+            },
+            tooltip: {
+                trigger: 'axis'
+            },
+            legend: {
+                data:['Settings','Apps','Stocks','Sports','Calendar','Q&A']
+            },
+            grid: {
+                left: '3%',
+                right: '4%',
+                bottom: '3%',
+                containLabel: true
+            },
+            toolbox: {
+                feature: {
+                    saveAsImage: {}
+                }
+            },
+            xAxis: {
+                type: 'category',
+                boundaryGap: false,
+                data: ['5','4','3','2','1','0']
+            },
+            yAxis: {
+                type: 'value'
+            },
+            series: [
+                {
+                    name:'Settings',
+                    type:'line',
+                    data:[134, 28, 12, 16, 11, 421]
+                },
+                {
+                    name:'Apps',
+                    type:'line',
+                    data:[173, 42, 35, 36, 10, 326]
+                },
+                {
+                    name:'Stocks',
+                    type:'line',
+                    data:[59, 8, 4, 2, 7, 542]
+                },
+                {
+                    name:'Sports',
+                    type:'line',
+                    data:[41, 10, 5, 7, 3, 556]
+                },
+                {
+                    name:'Calendar',
+                    type:'line',
+                    data:[46, 16, 12, 7, 6, 535]
+                },
+                {
+                    name:'Q&A',
+                    type:'line',
+                    data:[38, 17, 9, 5, 7, 546]
+                },
+            ]
+        };        
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="class3" style="width: 1200px;height:400px;"></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('class3'),'macarons');
+
+        // 指定图表的配置项和数据
+        option = {
+            title: {
+                text: 'Frequency of Functions Distrubution'
+            },
+            tooltip: {
+                trigger: 'axis'
+            },
+            legend: {
+                data:['Settings','Apps','Stocks','Sports','Calendar','Q&A']
+            },
+            grid: {
+                left: '3%',
+                right: '4%',
+                bottom: '3%',
+                containLabel: true
+            },
+            toolbox: {
+                feature: {
+                    saveAsImage: {}
+                }
+            },
+            xAxis: {
+                type: 'category',
+                boundaryGap: false,
+                data: ['5','4','3','2','1']
+            },
+            yAxis: {
+                type: 'value'
+            },
+            series: [
+                {
+                    name:'Settings',
+                    type:'line',
+                    data:[134, 28, 12, 16, 11]
+                },
+                {
+                    name:'Apps',
+                    type:'line',
+                    data:[173, 42, 35, 36, 10]
+                },
+                {
+                    name:'Stocks',
+                    type:'line',
+                    data:[59, 8, 4, 2, 7]
+                },
+                {
+                    name:'Sports',
+                    type:'line',
+                    data:[41, 10, 5, 7, 3]
+                },
+                {
+                    name:'Calendar',
+                    type:'line',
+                    data:[46, 16, 12, 7, 6]
+                },
+                {
+                    name:'Q&A',
+                    type:'line',
+                    data:[38, 17, 9, 5, 7]
+                },
+            ]
+        };        
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="class4-0" style="width: 1200px;height:400px;"></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('class4-0'),'macarons');
+
+        // 指定图表的配置项和数据
+        option = {
+            title: {
+                text: 'Class 4 Functions'
+            },
+            tooltip: {
+                trigger: 'axis'
+            },
+            legend: {
+                data:['Flashlight','Video calls','Notes','Restaurant','Ride sharing','Reminders','Email','Translation']
+            },
+            grid: {
+                left: '3%',
+                right: '4%',
+                bottom: '3%',
+                containLabel: true
+            },
+            toolbox: {
+                feature: {
+                    saveAsImage: {}
+                }
+            },
+            xAxis: {
+                type: 'category',
+                boundaryGap: false,
+                data: ['5','4','3','2','1','0']
+            },
+            yAxis: {
+                type: 'value'
+            },
+            series: [
+                {
+                    name:'Flashlight',
+                    type:'line',
+                    data:[117, 64, 45, 27, 25, 344]
+                },
+                {
+                    name:'Video calls',
+                    type:'line',
+                    data:[93, 73, 43, 36, 22, 355]
+                },
+                {
+                    name:'Notes',
+                    type:'line',
+                    data:[62, 58, 53, 19, 16, 414]
+                },
+                {
+                    name:'Restaurant',
+                    type:'line',
+                    data:[45, 74, 50, 38, 15, 400]
+                },
+                {
+                    name:'Ride sharing',
+                    type:'line',
+                    data:[25, 51, 62, 59, 23, 402]
+                },
+                {
+                    name:'Reminders',
+                    type:'line',
+                    data:[46, 38, 23, 20, 14, 481]
+                },
+                {
+                    name:'Email',
+                    type:'line',
+                    data:[48, 35, 27, 21, 19, 472]
+                },
+                {
+                    name:'Translation',
+                    type:'line',
+                    data:[37, 36, 24, 15, 6, 504]
+                }
+            ]
+        };        
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+
+   <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+   <div id="class4" style="width: 1200px;height:400px;"></div>
+   <script type="text/javascript">
+       // 基于准备好的dom，初始化echarts实例
+       var myChart = echarts.init(document.getElementById('class4'),'macarons');
+
+       // 指定图表的配置项和数据
+       option = {
+           title: {
+               text: 'Class 4 Functions'
+           },
+           tooltip: {
+               trigger: 'axis'
+           },
+           legend: {
+               data:['Flashlight','Video calls','Notes','Restaurant','Ride sharing','Reminders','Email','Translation']
+           },
+           grid: {
+               left: '3%',
+               right: '4%',
+               bottom: '3%',
+               containLabel: true
+           },
+           toolbox: {
+               feature: {
+                   saveAsImage: {}
+               }
+           },
+           xAxis: {
+               type: 'category',
+               boundaryGap: false,
+               data: ['5','4','3','2','1']
+           },
+           yAxis: {
+               type: 'value'
+           },
+           series: [
+               {
+                   name:'Flashlight',
+                   type:'line',
+                   data:[117, 64, 45, 27, 25]
+               },
+               {
+                   name:'Video calls',
+                   type:'line',
+                   data:[93, 73, 43, 36, 22]
+               },
+               {
+                   name:'Notes',
+                   type:'line',
+                   data:[62, 58, 53, 19, 16]
+               },
+               {
+                   name:'Restaurant',
+                   type:'line',
+                   data:[45, 74, 50, 38, 15]
+               },
+               {
+                   name:'Ride sharing',
+                   type:'line',
+                   data:[25, 51, 62, 59, 23]
+               },
+               {
+                   name:'Reminders',
+                   type:'line',
+                   data:[46, 38, 23, 20, 14]
+               },
+               {
+                   name:'Email',
+                   type:'line',
+                   data:[48, 35, 27, 21, 19]
+               },
+               {
+                   name:'Translation',
+                   type:'line',
+                   data:[37, 36, 24, 15, 6]
+               }
+           ]
+       };        
+       // 使用刚指定的配置项和数据显示图表。
+       myChart.setOption(option);
+   </script>
+</body>
+</html>
