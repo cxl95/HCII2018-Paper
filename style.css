@@ -6,6 +6,13 @@
     text-align: center;
 }
 
+.subtitle{
+    margin:auto;
+    padding-top: 20px;
+    width:100%;
+    text-align: center;
+}
+
 .block{
     width: 80%;
     min-width: 1300px;
@@ -39,37 +46,3 @@
     flex: 0 0 auto;
 }
 
-/* #class1, #class4-0{
-    position: relative;
-    right: 300px;
-}
-
-#class2, #class4{
-    position: relative;
-    left: 300px;
-    bottom: 450px;
-}
-
-#class3-0{
-    position: relative;
-    bottom: 450px;
-    right: 300px;
-}
-
-#class3{
-    position: relative;
-    bottom: 900px;
-    left: 300px;
-}
-
-#class4-0{
-    position: relative;
-    right: 300px;
-    bottom: 900px;
-}
-
-#class4{
-    position: relative;
-    left: 300px;
-    bottom: 1350px;
-} */

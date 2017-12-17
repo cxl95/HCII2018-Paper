@@ -16,7 +16,7 @@
         <h3 style="font-size:20px;">A Questionnaire-Based Study of 622 Adults</h3>
     </div>
     <div class="block" >
-    <h2 style="font-size:30px;">Functions by Touch</h2>
+    <div class="subtitle"><h2 style="font-size:30px;">Functions Used by Touch</h2></div>
     <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
     <div class="original" id="total"></div>
     <script type="text/javascript">
@@ -26,7 +26,7 @@
         // 指定图表的配置项和数据
         option = {
             title: {
-                text: 'Frequency of Functions Distrubution',
+                text: 'Frequency Distributions of All Functions',
                 left: 'center'
             },
             tooltip: {
@@ -53,7 +53,7 @@
             xAxis: {
                 type: 'category',
                 boundaryGap: false,
-                data: ['5','4','3','2','1','0']
+                data: ['everyday','once for 2 or 3 days','once a week','less than once a week','rarely','Do not use']
             },
             yAxis: {
                 type: 'value'
@@ -199,7 +199,8 @@
         // 指定图表的配置项和数据
         option = {
             title: {
-                text: 'Class 1 Functions'
+                text: 'Class 1 Functions',
+                subtext:'Functions Uesd Most Commonly'
             },
             tooltip: {
                 trigger: 'axis'
@@ -225,7 +226,7 @@
             xAxis: {
                 type: 'category',
                 boundaryGap: false,
-                data: ['5','4','3','2','1','0']
+                data: ['everyday','once for 2 or 3 days','once a week','less than once a week','rarely','Do not use']
             },
             yAxis: {
                 type: 'value'
@@ -266,7 +267,8 @@
         // 指定图表的配置项和数据
         option = {
             title: {
-                text: 'Class 2 Functions'
+                text: 'Class 2 Functions',
+                subtext:'Functions Related to the Usage Scenarios'
             },
             tooltip: {
                 trigger: 'axis'
@@ -293,7 +295,7 @@
             xAxis: {
                 type: 'category',
                 boundaryGap: false,
-                data: ['5','4','3','2','1','0']
+                data: ['everyday','once for 2 or 3 days','once a week','less than once a week','rarely','Do not use']
             },
             yAxis: {
                 type: 'value'
@@ -349,7 +351,9 @@
         // 指定图表的配置项和数据
         option = {
             title: {
-                text: 'Frequency of Functions Distrubution'
+                text: 'Class 3 Functions',
+                subtext:'Functions with High Proportion of Useing Every Day'
+            
             },
             tooltip: {
                 trigger: 'axis'
@@ -376,7 +380,7 @@
             xAxis: {
                 type: 'category',
                 boundaryGap: false,
-                data: ['5','4','3','2','1','0']
+                data: ['everyday','once for 2 or 3 days','once a week','less than once a week','rarely','Do not use']
             },
             yAxis: {
                 type: 'value'
@@ -427,7 +431,8 @@
         // 指定图表的配置项和数据
         option = {
             title: {
-                text: 'Frequency of Functions Distrubution'
+                text: 'Class 3 Functions',
+                subtext:'Functions with High Proportion of Using Every Day'
             },
             tooltip: {
                 trigger: 'axis'
@@ -454,7 +459,7 @@
             xAxis: {
                 type: 'category',
                 boundaryGap: false,
-                data: ['5','4','3','2','1']
+                data: ['everyday','once for 2 or 3 days','once a week','less than once a week','rarely']
             },
             yAxis: {
                 type: 'value'
@@ -505,7 +510,8 @@
         // 指定图表的配置项和数据
         option = {
             title: {
-                text: 'Class 4 Functions'
+                text: 'Class 4 Functions',
+                subtext:'Functions Relevant with Particular Scenarios'
             },
             tooltip: {
                 trigger: 'axis'
@@ -532,7 +538,7 @@
             xAxis: {
                 type: 'category',
                 boundaryGap: false,
-                data: ['5','4','3','2','1','0']
+                data: ['everyday','once for 2 or 3 days','once a week','less than once a week','rarely','Do not use']
             },
             yAxis: {
                 type: 'value'
@@ -593,7 +599,8 @@
        // 指定图表的配置项和数据
        option = {
            title: {
-               text: 'Class 4 Functions'
+               text: 'Class 4 Functions',
+               subtext:'Functions Relevant with Particular Scenarios'
            },
            tooltip: {
                trigger: 'axis'
@@ -620,7 +627,7 @@
            xAxis: {
                type: 'category',
                boundaryGap: false,
-               data: ['5','4','3','2','1']
+               data: ['everyday','once for 2 or 3 days','once a week','less than once a week','rarely']
            },
            yAxis: {
                type: 'value'
@@ -674,7 +681,7 @@
    </div>
 
     <div class="block">
-    <h2 style="font-size:30px;">Functions by Speech</h2>
+    <div class="subtitle"><h2 style="font-size:30px;">Functions Used by Speech</h2></div>
     <div class="original" id="speechTotal"></div>
     <script type="text/javascript">
         // 基于准备好的dom，初始化echarts实例
@@ -683,7 +690,7 @@
         // 指定图表的配置项和数据
         option = {
             title: {
-                text: 'Frequency of Functions Distrubution',
+                text: 'Frequency Distribution of All Functions',
                 left: 'center'
             },
             tooltip: {
@@ -772,15 +779,16 @@
         myChart.setOption(option);
     </script>
     
-    <div class="part" id="speechclass1"></div>
+    <div class="part" id="speechclass1-0"></div>
     <script type="text/javascript">
         // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById('speechclass1'),'macarons');
+        var myChart = echarts.init(document.getElementById('speechclass1-0'),'macarons');
 
         // 指定图表的配置项和数据
         option = {
             title: {
-                text: 'Frequency of Functions Distrubution',
+                text: 'Class 1 Functions',
+                subtext:'Functions Used Relatively Commonly'
             },
             tooltip: {
                 trigger: 'axis'
@@ -847,16 +855,94 @@
         // 使用刚指定的配置项和数据显示图表。
         myChart.setOption(option);
     </script>
-    
-    <div class="part" id="speechclass2"></div>
+
+    <div class="part" id="speechclass1"></div>
     <script type="text/javascript">
         // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById('speechclass2'),'macarons');
+        var myChart = echarts.init(document.getElementById('speechclass1'),'macarons');
 
         // 指定图表的配置项和数据
         option = {
             title: {
-                text: 'Frequency of Functions Distrubution',
+                text: 'Class 1 Functions',
+                subtext:'Functions Used Relatively Commonly'
+            },
+            tooltip: {
+                trigger: 'axis'
+            },
+            legend: {
+                data:['Instant messaging','Alarm','Making a call','Weather','Messages','Music'],
+                top: '50',
+                width: '150',
+                left:'450',
+                orient: 'vertical'
+            },
+            grid: {
+                left: '3%',
+                right: '160',
+                bottom: '3%',
+                containLabel: true
+            },
+            toolbox: {
+                feature: {
+                    saveAsImage: {}
+                }
+            },
+            xAxis: {
+                type: 'category',
+                boundaryGap: false,
+                data: ['5','4','3','2','1',]
+            },
+            yAxis: {
+                type: 'value'
+            },
+            series: [
+                {
+                    name:'Instant messaging',
+                    type:'line',
+                    data:[18, 7, 0, 1, 1]
+                },
+                {
+                    name:'Making a call',
+                    type:'line',
+                    data:[46, 15, 9, 7, 5]
+                },
+                {
+                    name:'Alarm',
+                    type:'line',
+                    data:[18, 7, 5, 2, 0]
+                },
+                {
+                    name:'Weather',
+                    type:'line',
+                    data:[15, 4, 3, 4, 2]
+                },
+                {
+                    name:'Music',
+                    type:'line',
+                    data:[20, 12, 2, 2, 3]
+                },
+                {
+                    name:'Messages',
+                    type:'line',
+                    data:[27, 15, 3, 4, 3]
+                }
+            ]
+        };        
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+    
+    <div class="part" id="speechclass2-0"></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('speechclass2-0'),'macarons');
+
+        // 指定图表的配置项和数据
+        option = {
+            title: {
+                text: 'Class 2 Functions',
+                subtext:'Functions with Distributed Frequency Distributions'
             },
             tooltip: {
                 trigger: 'axis'
@@ -914,6 +1000,130 @@
         myChart.setOption(option);
     </script>
 
+<div class="part" id="speechclass2"></div>
+<script type="text/javascript">
+    // 基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById('speechclass2'),'macarons');
+
+    // 指定图表的配置项和数据
+    option = {
+        title: {
+            text: 'Class 2 Functions',
+            subtext:'Functions with Distributed Frequency Distributions'
+        },
+        tooltip: {
+            trigger: 'axis'
+        },
+        legend: {
+            data:['Web Search','Chatting','Maps','Video calls'],
+            top: '50',
+            width: '150',
+            left:'450',
+            orient: 'vertical'
+        },
+        grid: {
+            left: '3%',
+            right: '160',
+            bottom: '3%',
+            containLabel: true
+        },
+        toolbox: {
+            feature: {
+                saveAsImage: {}
+            }
+        },
+        xAxis: {
+            type: 'category',
+            boundaryGap: false,
+            data: ['5','4','3','2','1']
+        },
+        yAxis: {
+            type: 'value'
+        },
+        series: [
+            {
+                name:'Web Search',
+                type:'line',
+                data:[11, 11, 4, 6, 1]
+            },
+            {
+                name:'Maps',
+                type:'line',
+                data:[10, 8, 6, 3, 7]
+            },
+            {
+                name:'Video calls',
+                type:'line',
+                data:[11, 13, 5, 8, 1]
+            },
+            {
+                name:'Chatting',
+                type:'line',
+                data:[17, 10, 10, 7, 9]
+            }
+        ]
+    };        
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+</script>
    </div>
+
+<div class="block">
+    <div class="subtitle">
+        <h2 style="font-size:30px;">Participants Classification</h2>
+    </div>
+    <div class="original" id="participants"></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('participants'),'macarons');
+    
+        // 指定图表的配置项和数据
+        option = {
+            title : {
+                text: 'Participants Classification',
+                x:'center'
+            },
+            tooltip : {
+                trigger: 'item',
+                formatter: "{a} <br/>{b} : {c} ({d}%)"
+            },
+            legend: {
+                orient: 'vertical',
+                left: 'left',
+                data: ['Type 1: Never heard of the speech interaction','Type 2: Heard of it but never use it','Type 3: Gave up after tryout','Type 4: Use speech interaction']
+            },
+            series : [
+                {
+                    name: 'Participants Classification',
+                    type: 'pie',
+                    radius : '55%',
+                    center: ['50%', '60%'],
+                    label: {
+                        normal:{
+                            formatter: "{b} \n  \n {c} ({d}%)"
+                        }
+                    },
+                    data:[
+                        {value:93, name:'Type 1: Never heard of the speech interaction'},
+                        {value:224, name:'Type 2: Heard of it but never use it'},
+                        {value:113, name:'Type 3: Gave up after tryout'},
+                        {value:182, name:'Type 4: Use speech interaction'},
+                    ],
+                    itemStyle: {
+                        emphasis: {
+                            shadowBlur: 10,
+                            shadowOffsetX: 0,
+                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                        }
+                    }
+                }
+            ]
+        };
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+
+</div>
+
 </body>
 </html>
