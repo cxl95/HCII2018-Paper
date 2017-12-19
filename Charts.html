@@ -1122,7 +1122,105 @@
         // 使用刚指定的配置项和数据显示图表。
         myChart.setOption(option);
     </script>
+</div>
 
+<div class="block">
+    <div class="subtitle">
+        <h2 style="font-size:30px;">Type 2: Heard of Speech Interaction but Never Use It</h2>
+    </div>
+    <div class="original" id="type2reason"></div>
+    <script type="text/javascript">
+        var myChart = echarts.init(document.getElementById('type2reason'),'macarons');
+
+    option = {
+        tooltip : {
+            trigger: 'axis',
+            axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+                type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+                    }
+                },
+        legend: {
+            data: ['5', '4','3','2','1']
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis:  {
+            type: 'value'
+        },
+        yAxis: {
+            type: 'category',
+            // data: ['type2r1','type2r3','type2r5','type2r8','type2r4','type2r9','type2r7','type2r2','type2r6']
+            data: ['type2r6','type2r2','type2r7','type2r9','type2r4','type2r8','type2r5','type2r3','type2r2']
+        },
+        series: [
+            {
+                name: '5',
+                type: 'bar',
+                stack: '总量',
+                label: {
+                    normal: {
+                        show: false,
+                        position: 'insideRight'
+                    }
+                },
+                data: [1,0,2,2,4,5,2,4,33]
+            },
+            {
+                name: '4',
+                type: 'bar',
+                stack: '总量',
+                label: {
+                    normal: {
+                        show: false,
+                        position: 'insideRight'
+                    }
+                },
+                data: [1, 0, 0, 5, 8, 7, 8, 8, 13]
+            },
+            {
+                name: '3',
+                type: 'bar',
+                stack: '总量',
+                label: {
+                    normal: {
+                        show: false,
+                        position: 'insideRight'
+                    }
+                },
+                data: [1, 2, 6, 5, 4, 11, 7, 16, 26]
+            },
+            {
+                name: '2',
+                type: 'bar',
+                stack: '总量',
+                label: {
+                    normal: {
+                        show: false,
+                        position: 'insideRight'
+                    }
+                },
+                data: [0, 5, 5, 6, 12, 9, 18, 15, 8]
+            },
+            {
+                name: '1',
+                type: 'bar',
+                stack: '总量',
+                label: {
+                    normal: {
+                        show: false,
+                        position: 'insideRight'
+                    }
+                },
+                data: [1, 7, 14, 11, 12, 19, 16, 19, 96]
+            }
+        ]
+    };
+    myChart.setOption(option);
+    </script>
 </div>
 
 </body>
