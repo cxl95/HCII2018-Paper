@@ -1221,6 +1221,386 @@
     };
     myChart.setOption(option);
     </script>
+        <div class="table" id="tabletype2">
+            <table>
+                <tr>
+                    <td>type2r1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>	
+                    <td>Accustomed to manual operation, don’t want to use speech interaction.</td>
+                </tr>
+                <tr>
+                    <td>type2r2      </td>
+                    <td>I don't know if my phone can use speech interaction.</td>
+                </tr>
+                <tr>
+                    <td>type2r3      </td>
+                    <td>I don't know what I can do by speech interac-tion or I don't know what to say.</td>
+                </tr>
+                <tr>
+                    <td>type2r4      </td>
+                    <td>I don't trust the speech interaction. (I think it can't understand what I'm saying).</td>
+                </tr>
+                <tr>
+                    <td>type2r5      </td>
+                    <td>It feels awkward to use speech interaction, so I never tried.</td>
+                </tr>
+                <tr>
+                    <td>type2r6      </td>
+                    <td>My phone doesn’t have a voice system.</td>
+                </tr>
+                <tr>
+                    <td>type2r7      </td>
+                    <td>I am worried about consuming too much cellu-lar data.</td>
+                </tr>
+                <tr>
+                    <td>type2r8      </td>
+                    <td>I don't want people around me to know what I'm doing.</td>
+                </tr>
+                <tr>
+                    <td>type2r9      </td>
+                    <td>I'm worried that my privacy information might leak, like my voice or my location.</td>
+                </tr>
+            </table>
+        </div>
+</div>
+
+<div class="block">
+    <div class="subtitle">
+        <h2 style="font-size:30px;">Type 3: Give up Speech Interaction after Tryout</h2>
+    </div>
+    <div class="original" id="type3reason"></div>
+    <script type="text/javascript">
+        var myChart = echarts.init(document.getElementById('type3reason'),'macarons');
+
+    option = {
+        tooltip : {
+            trigger: 'axis',
+            axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+                type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+                    }
+                },
+        legend: {
+            data: ['5', '4','3','2','1']
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis:  {
+            type: 'value'
+        },
+        yAxis: {
+            type: 'category',
+            data: ['type3r5','type3r16','type3r17','type3r15','type3r4','type3r11','type3r7','type3r13','type3r2','type3r9','type3r14','type3r12','type3r8','type3r6','type3r10','type3r1','type3r3']
+        },
+        series: [
+            {
+                name: '5',
+                type: 'bar',
+                stack: '总量',
+                label: {
+                    normal: {
+                        show: false,
+                        position: 'insideRight'
+                    }
+                },
+                data: [0, 0, 1, 1, 1, 0, 2, 3, 5, 4, 4, 5, 11, 8, 10, 15, 15]
+            },
+            {
+                name: '4',
+                type: 'bar',
+                stack: '总量',
+                label: {
+                    normal: {
+                        show: false,
+                        position: 'insideRight'
+                    }
+                },
+                data: [0, 0, 1, 3, 1, 5, 5, 4, 1, 3, 4, 8, 4, 6, 8, 11, 7]
+            },
+            {
+                name: '3',
+                type: 'bar',
+                stack: '总量',
+                label: {
+                    normal: {
+                        show: false,
+                        position: 'insideRight'
+                    }
+                },
+                data: [0, 1, 2, 5, 6, 8, 4, 6, 6, 8, 8, 11, 7, 12, 11, 12, 15]
+            },
+            {
+                name: '2',
+                type: 'bar',
+                stack: '总量',
+                label: {
+                    normal: {
+                        show: false,
+                        position: 'insideRight'
+                    }
+                },
+                data: [2, 5, 5, 2, 8, 2, 4, 2, 7, 3, 6, 2, 6, 8, 5, 5, 10]
+            },
+            {
+                name: '1',
+                type: 'bar',
+                stack: '总量',
+                label: {
+                    normal: {
+                        show: false,
+                        position: 'insideRight'
+                    }
+                },
+                data: [2, 2, 3, 4, 2, 3, 6, 3, 5, 6, 9, 6, 6, 4, 3, 10, 10]
+            }
+        ]
+    };
+    myChart.setOption(option);
+    </script>
+    <div class="table" id="tabletype3">
+        <table>
+            <tr>
+                <td>type3r1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>	
+                <td>Accustomed to manual operation, don’t want to use speech interaction</td>
+            </tr>
+            <tr>
+                <td>type3r2      </td>
+                <td>I don't know what I can do by speech interaction or I don't know what to say</td>
+            </tr>
+            <tr>
+                <td>type3r3      </td>
+                <td>It's awkward to use speech interaction on most occasions because I am afraid of interfering with others or drawing others’ attention.</td>
+            </tr>
+            <tr>
+                <td>type3r4      </td>
+                <td>I need network to use speech interaction, but I don’t have network at any time </td>
+            </tr>
+            <tr>
+                <td>type3r5      </td>
+                <td>Often prompts the network to be unable to connect.</td>
+            </tr>
+            <tr>
+                <td>type3r6      </td>
+                <td>The way to trigger the speech interaction is too deliberate, and I always can't think of it.</td>
+            </tr>
+            <tr>
+                <td>type3r7      </td>
+                <td>The waiting time is too long when the speech interaction is triggered.</td>
+            </tr>
+            <tr>
+                <td>type3r8      </td>
+                <td>I always will speak slowly when I use speech interaction, and pay attention to my pronunciation.</td>
+            </tr>
+            <tr>
+                <td>type3r9      </td>
+                <td>It can't translate voice into text correctly when I use speech interaction.</td>
+            </tr>
+            <tr>
+                <td>type3r10     </td>
+                <td>It always gives an irrelevant answer (or an answer that is not what I want) when I use speech interaction.</td>
+            </tr>
+            <tr>
+                <td>type3r11     </td>
+                <td>The pronunciation of the feedback is unnatural and sounds strange.</td>
+            </tr>
+            <tr>
+                <td>type3r12     </td>
+                <td>Can't finish the function I want by speech interaction.</td>
+            </tr>
+            <tr>
+                <td>type3r13     </td>
+                <td>It always gives an unsuitable answer (or an answer that is not suit the situation or culture).</td>
+            </tr>    
+            <tr>
+                <td>type3r14     </td>
+                <td>It's always a misoperation to trigger speech interaction when it doesn't need it.</td>
+            </tr>
+            <tr>
+                <td>type3r15     </td>
+                <td>The answers given are not enough to attract me when I use speech interaction.</td>
+            </tr>
+            <tr>
+                <td>type3r16     </td>
+                <td>I am worried about consuming too much cellular data.</td>
+            </tr>
+            <tr>
+                <td>type3r17     </td>
+                <td>I'm worried that my privacy information might leak, like my voice or my location.</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div class="block">
+    <div class="subtitle">
+        <h2 style="font-size:30px;">Type 4: Use speech interaction</h2>
+    </div>
+    <div class="original" id="type4reason"></div>
+    <script type="text/javascript">
+        var myChart = echarts.init(document.getElementById('type4reason'),'macarons');
+
+    option = {
+        tooltip : {
+            trigger: 'axis',
+            axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+                type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+                    }
+                },
+        legend: {
+            data: ['5', '4','3','2','1']
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis:  {
+            type: 'value'
+        },
+        yAxis: {
+            type: 'category',
+            data: ['type4r4','type4r1','type4r5','type4r16','type4r7','type4r17','type4r10','type4r13','type4r12','type4r14','type4r6','type4r15','type4r11','type4r3','type4r9','type4r8','type4r2']
+        },
+        series: [
+            {
+                name: '5',
+                type: 'bar',
+                stack: '总量',
+                label: {
+                    normal: {
+                        show: false,
+                        position: 'insideRight'
+                    }
+                },
+                data: [1, 1, 1, 1, 1, 2, 1, 2, 0, 0, 2, 2, 4, 0, 2, 1, 7]
+            },
+            {
+                name: '4',
+                type: 'bar',
+                stack: '总量',
+                label: {
+                    normal: {
+                        show: false,
+                        position: 'insideRight'
+                    }
+                },
+                data: [2, 1, 4, 1, 1, 2, 3, 6, 4, 3, 6, 5, 8, 3, 7, 6, 12]
+            },
+            {
+                name: '3',
+                type: 'bar',
+                stack: '总量',
+                label: {
+                    normal: {
+                        show: false,
+                        position: 'insideRight'
+                    }
+                },
+                data: [2, 3, 1, 3, 6, 6, 6, 6, 7, 9, 10, 11, 12, 11, 15, 8, 12]
+            },
+            {
+                name: '2',
+                type: 'bar',
+                stack: '总量',
+                label: {
+                    normal: {
+                        show: false,
+                        position: 'insideRight'
+                    }
+                },
+                data: [3, 3, 5, 6, 4, 3, 7, 7, 7, 8, 5, 8, 8, 11, 9, 9, 13]
+            },
+            {
+                name: '1',
+                type: 'bar',
+                stack: '总量',
+                label: {
+                    normal: {
+                        show: false,
+                        position: 'insideRight'
+                    }
+                },
+                data: [5, 7, 8, 8, 8, 7, 8, 5, 9, 12, 12, 10, 12, 20, 15, 25, 16]
+            }
+        ]
+    };
+    myChart.setOption(option);
+    </script>
+    <div class="table" id="tabletype4">
+        <table>
+            <tr>
+                <td>type4r1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>	
+                <td>I don't know what I can do by speech interaction or I don't know what to say.</td>
+            </tr>
+            <tr>
+                <td>type4r2      </td>
+                <td>It's awkward to use speech interaction on most occasions because I am afraid of interfering with others or drawing others’ attention.</td>
+            </tr>
+            <tr>
+                <td>type4r3      </td>
+                <td>’I need network to use speech interaction, but I don’t have network at any time.</td>
+            </tr>
+            <tr>
+                <td>type4r4      </td>
+                <td>Often prompts the network to be unable to connect.</td>
+            </tr>
+            <tr>
+                <td>type4r5      </td>
+                <td>The way to trigger the speech interaction is too deliberate, and I always can't think of it.</td>
+            </tr>
+            <tr>
+                <td>type4r6      </td>
+                <td>It's always a misoperation to trigger speech interaction when it doesn't need it.</td>
+            </tr>
+            <tr>
+                <td>type4r7      </td>
+                <td>I feel that using speech interaction interrupts me to use other functions.</td>
+            </tr>
+            <tr>
+                <td>type4r8      </td>
+                <td>I always will speak slowly when I use speech interaction, and pay attention to my pronunciation.</td>
+            </tr>
+            <tr>
+                <td>type4r9      </td>
+                <td>It can't translate voice into text correctly when I use speech interaction.</td>
+            </tr>
+            <tr>
+                <td>type4r10     </td>
+                <td>The speech interaction takes too much time when giving feedbacks.</td>
+            </tr>
+            <tr>
+                <td>type4r11     </td>
+                <td>It always gives an irrelevant answer (or an answer that is not what I want) when I use speech interaction.</td>
+            </tr>
+            <tr>
+                <td>type4r12     </td>
+                <td>The pronunciation of the feedback is unnatural and sounds strange.</td>
+            </tr>
+            <tr>
+                <td>type4r13     </td>
+                <td>Can't finish the function I want by speech interaction.</td>
+            </tr>    
+            <tr>
+                <td>type4r14     </td>
+                <td>It always gives an unsuitable answer (or an answer that is not suit the situation or culture).</td>
+            </tr>
+            <tr>
+                <td>type4r15     </td>
+                <td>The answers given are not enough to attract me when I use speech interaction.</td>
+            </tr>
+            <tr>
+                <td>type4r16     </td>
+                <td>I am worried about consuming too much cellular data.</td>
+            </tr>
+            <tr>
+                <td>type4r17     </td>
+                <td>I'm worried that my privacy information might leak, like my voice or my location.</td>
+            </tr>
+        </table>
+    </div>
 </div>
 
 </body>
