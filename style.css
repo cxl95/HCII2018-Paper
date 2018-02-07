@@ -36,14 +36,14 @@
     padding-top: 25px;
     padding-bottom: 25px;
     width: 1200px;
-    height:450px;
+    height:650px;
 }
 
 .part{
     padding-top: 25px;
     padding-bottom: 25px;
     width: 600px;
-    height: 200px;
+    height: 230px;
     flex: 0 0 auto;
 }
 td{
