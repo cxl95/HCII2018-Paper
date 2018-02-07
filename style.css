@@ -1,0 +1,50 @@
+.title{
+    margin:auto;
+    padding-top: 20px;
+    height: 200px;
+    width:100%;
+    text-align: center;
+}
+
+.subtitle{
+    margin:auto;
+    padding-top: 20px;
+    width:100%;
+    text-align: center;
+}
+
+.block{
+    width: 80%;
+    min-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: ghostwhite;
+    border: 2px dashed;
+    border-radius: 25px;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;                                                                                                                                       
+}
+
+.original{
+    margin: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 1200px;
+    height:450px;
+}
+
+.part{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 600px;
+    height: 200px;
+    flex: 0 0 auto;
+}
+td{
+    height: 20px;
+}

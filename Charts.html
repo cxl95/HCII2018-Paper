@@ -1,0 +1,1607 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <!-- 引入 echarts.js -->
+    <script src="echarts.js"></script>
+    <script src="macarons.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+    <div class="title">
+        <h1 style="font-size:50px;">Figures & Tables</h1>
+        <h3 style="font-size:20px;">Application of Logistic Regression Analysis of Smartphone Speech Interaction Usage in China: </h3>
+        <h3 style="font-size:20px;">A Questionnaire-Based Study of 622 Adults</h3>
+    </div>
+    <div class="block" >
+    <div class="subtitle"><h2 style="font-size:30px;">Functions Used by Touch</h2></div>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div class="original" id="total"></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('total'),'macarons');
+
+        // 指定图表的配置项和数据
+        option = {
+            title: {
+                text: 'Frequency Distributions of All Functions',
+                left: 'center'
+            },
+            tooltip: {
+                trigger: 'axis'
+            },
+            legend: {
+                data:['Instant messaging','Making a call','Mobile payment','Alarm','Weather','Web Search','Camera','Music','Messages','Calculator','Maps','Settings','Apps','Stocks','Sports','Calendar','Q&A','Flashlight','Video calls','Notes','Restaurant','Ride sharing','Reminders','Email','Translation'],
+                top: '50',
+                width: '150',
+                left:'1050',
+                orient: 'vertical'
+            },
+            grid: {
+                left: '3%',
+                right: '160',
+                bottom: '3%',
+                containLabel: true
+            },
+            toolbox: {
+                feature: {
+                    saveAsImage: {}
+                }
+            },
+            xAxis: {
+                type: 'category',
+                boundaryGap: false,
+                data: ['everyday','once for 2 or 3 days','once a week','less than once a week','rarely','Do not use']
+            },
+            yAxis: {
+                type: 'value'
+            },
+            series: [
+                {
+                    name:'Instant messaging',
+                    type:'line',
+                    data:[444, 23, 4, 0, 2, 149]
+                },
+                {
+                    name:'Making a call',
+                    type:'line',
+                    data:[405, 95, 17, 8, 10, 87]
+                },
+                {
+                    name:'Mobile payment',
+                    type:'line',
+                    data:[325, 107, 40, 32, 13, 105]
+                },
+                {
+                    name:'Alarm',
+                    type:'line',
+                    data:[323, 54, 16, 10, 9, 210]
+                },
+                {
+                    name:'Weather',
+                    type:'line',
+                    data:[287, 94, 18, 8, 3, 212]
+                },
+                {
+                    name:'Web Search',
+                    type:'line',
+                    data:[268, 49, 14, 3, 2, 286]
+                },
+                {
+                    name:'Camera',
+                    type:'line',
+                    data:[257, 166, 60, 31, 9, 99]
+                },
+                {
+                    name:'Music',
+                    type:'line',
+                    data:[244, 92, 36, 19, 6, 225]
+                },
+                {
+                    name:'Messages',
+                    type:'line',
+                    data:[187, 67, 21, 30, 34, 283]
+                },
+                {
+                    name:'Calculator',
+                    type:'line',
+                    data:[93, 79, 54, 68, 25, 303]
+                },
+                {
+                    name:'Maps',
+                    type:'line',
+                    data:[57, 97, 98, 59, 39, 272]
+                },
+                {
+                    name:'Settings',
+                    type:'line',
+                    data:[134, 28, 12, 16, 11, 421]
+                },
+                {
+                    name:'Apps',
+                    type:'line',
+                    data:[173, 42, 35, 36, 10, 326]
+                },
+                {
+                    name:'Stocks',
+                    type:'line',
+                    data:[59, 8, 4, 2, 7, 542]
+                },
+                {
+                    name:'Sports',
+                    type:'line',
+                    data:[41, 10, 5, 7, 3, 556]
+                },
+                {
+                    name:'Calendar',
+                    type:'line',
+                    data:[46, 16, 12, 7, 6, 535]
+                },
+                {
+                    name:'Q&A',
+                    type:'line',
+                    data:[38, 17, 9, 5, 7, 546]
+                },
+                {
+                    name:'Flashlight',
+                    type:'line',
+                    data:[117, 64, 45, 27, 25, 344]
+                },
+                {
+                    name:'Video calls',
+                    type:'line',
+                    data:[93, 73, 43, 36, 22, 355]
+                },
+                {
+                    name:'Notes',
+                    type:'line',
+                    data:[62, 58, 53, 19, 16, 414]
+                },
+                {
+                    name:'Restaurant',
+                    type:'line',
+                    data:[45, 74, 50, 38, 15, 400]
+                },
+                {
+                    name:'Ride sharing',
+                    type:'line',
+                    data:[25, 51, 62, 59, 23, 402]
+                },
+                {
+                    name:'Reminders',
+                    type:'line',
+                    data:[46, 38, 23, 20, 14, 481]
+                },
+                {
+                    name:'Email',
+                    type:'line',
+                    data:[48, 35, 27, 21, 19, 472]
+                },
+                {
+                    name:'Translation',
+                    type:'line',
+                    data:[37, 36, 24, 15, 6, 504]
+                }
+            ]
+        };        
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+    
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div class="part" id="class1" ></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('class1'),'macarons');
+
+        // 指定图表的配置项和数据
+        option = {
+            title: {
+                text: 'Class 1 Functions',
+                subtext:'Functions Uesd Most Commonly'
+            },
+            tooltip: {
+                trigger: 'axis'
+            },
+            legend: {
+                data:['Instant messaging','Making a call','Mobile payment','Alarm'],
+                top: '50',
+                width: '150',
+                left:'450',
+                orient: 'vertical'
+            },
+            grid: {
+                left: '3%',
+                right: '160',
+                bottom: '3%',
+                containLabel: true
+            },
+            toolbox: {
+                feature: {
+                    saveAsImage: {}
+                }
+            },
+            xAxis: {
+                type: 'category',
+                boundaryGap: false,
+                data: ['everyday','once for 2 or 3 days','once a week','less than once a week','rarely','Do not use']
+            },
+            yAxis: {
+                type: 'value'
+            },
+            series: [
+                {
+                    name:'Instant messaging',
+                    type:'line',
+                    data:[444, 23, 4, 0, 2, 149]
+                },
+                {
+                    name:'Making a call',
+                    type:'line',
+                    data:[405, 95, 17, 8, 10, 87]
+                },
+                {
+                    name:'Mobile payment',
+                    type:'line',
+                    data:[325, 107, 40, 32, 13, 105]
+                },
+                {
+                    name:'Alarm',
+                    type:'line',
+                    data:[323, 54, 16, 10, 9, 210]
+                }
+            ]
+        };        
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+
+     <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div class="part" id="class2" ></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('class2'),'macarons');
+
+        // 指定图表的配置项和数据
+        option = {
+            title: {
+                text: 'Class 2 Functions',
+                subtext:'Functions Related to the Usage Scenarios'
+            },
+            tooltip: {
+                trigger: 'axis'
+            },
+            legend: {
+                data:['Weather','Web Search','Camera','Music','Messages','Calculator','Maps'],
+                top: '50',
+                width:'150',
+                left:'450',
+                orient: 'vertical',
+                align:'left'
+            },
+            grid: {
+                left: '3%',
+                right: '160',
+                bottom: '3%',
+                containLabel: true
+            },
+            toolbox: {
+                feature: {
+                    saveAsImage: {}
+                }
+            },
+            xAxis: {
+                type: 'category',
+                boundaryGap: false,
+                data: ['everyday','once for 2 or 3 days','once a week','less than once a week','rarely','Do not use']
+            },
+            yAxis: {
+                type: 'value'
+            },
+            series: [
+                {
+                    name:'Weather',
+                    type:'line',
+                    data:[287, 94, 18, 8, 3, 212]
+                },
+                {
+                    name:'Web Search',
+                    type:'line',
+                    data:[268, 49, 14, 3, 2, 286]
+                },
+                {
+                    name:'Camera',
+                    type:'line',
+                    data:[257, 166, 60, 31, 9, 99]
+                },
+                {
+                    name:'Music',
+                    type:'line',
+                    data:[244, 92, 36, 19, 6, 225]
+                },
+                {
+                    name:'Messages',
+                    type:'line',
+                    data:[187, 67, 21, 30, 34, 283]
+                },
+                {
+                    name:'Calculator',
+                    type:'line',
+                    data:[93, 79, 54, 68, 25, 303]
+                },
+                {
+                    name:'Maps',
+                    type:'line',
+                    data:[57, 97, 98, 59, 39, 272]
+                }
+            ]
+        };        
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div class="part" id="class3-0" ></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('class3-0'),'macarons');
+
+        // 指定图表的配置项和数据
+        option = {
+            title: {
+                text: 'Class 3 Functions',
+                subtext:'Functions with High Proportion of Useing Every Day'
+            
+            },
+            tooltip: {
+                trigger: 'axis'
+            },
+            legend: {
+                data:['Settings','Apps','Stocks','Sports','Calendar','Q&A'],
+                top: '50',
+                width:'150',
+                left:'450',
+                orient: 'vertical',
+                align:'left'
+            },
+            grid: {
+                left: '3%',
+                right: '160',
+                bottom: '3%',
+                containLabel: true
+            },
+            toolbox: {
+                feature: {
+                    saveAsImage: {}
+                }
+            },
+            xAxis: {
+                type: 'category',
+                boundaryGap: false,
+                data: ['everyday','once for 2 or 3 days','once a week','less than once a week','rarely','Do not use']
+            },
+            yAxis: {
+                type: 'value'
+            },
+            series: [
+                {
+                    name:'Settings',
+                    type:'line',
+                    data:[134, 28, 12, 16, 11, 421]
+                },
+                {
+                    name:'Apps',
+                    type:'line',
+                    data:[173, 42, 35, 36, 10, 326]
+                },
+                {
+                    name:'Stocks',
+                    type:'line',
+                    data:[59, 8, 4, 2, 7, 542]
+                },
+                {
+                    name:'Sports',
+                    type:'line',
+                    data:[41, 10, 5, 7, 3, 556]
+                },
+                {
+                    name:'Calendar',
+                    type:'line',
+                    data:[46, 16, 12, 7, 6, 535]
+                },
+                {
+                    name:'Q&A',
+                    type:'line',
+                    data:[38, 17, 9, 5, 7, 546]
+                },
+            ]
+        };        
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div class="part" id="class3" ></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('class3'),'macarons');
+
+        // 指定图表的配置项和数据
+        option = {
+            title: {
+                text: 'Class 3 Functions',
+                subtext:'Functions with High Proportion of Using Every Day'
+            },
+            tooltip: {
+                trigger: 'axis'
+            },
+            legend: {
+                data:['Settings','Apps','Stocks','Sports','Calendar','Q&A'],
+                top: '50',
+                width:'150',
+                left:'450',
+                orient: 'vertical',
+                align:'left'
+            },
+            grid: {
+                left: '3%',
+                right: '160',
+                bottom: '3%',
+                containLabel: true
+            },
+            toolbox: {
+                feature: {
+                    saveAsImage: {}
+                }
+            },
+            xAxis: {
+                type: 'category',
+                boundaryGap: false,
+                data: ['everyday','once for 2 or 3 days','once a week','less than once a week','rarely']
+            },
+            yAxis: {
+                type: 'value'
+            },
+            series: [
+                {
+                    name:'Settings',
+                    type:'line',
+                    data:[134, 28, 12, 16, 11]
+                },
+                {
+                    name:'Apps',
+                    type:'line',
+                    data:[173, 42, 35, 36, 10]
+                },
+                {
+                    name:'Stocks',
+                    type:'line',
+                    data:[59, 8, 4, 2, 7]
+                },
+                {
+                    name:'Sports',
+                    type:'line',
+                    data:[41, 10, 5, 7, 3]
+                },
+                {
+                    name:'Calendar',
+                    type:'line',
+                    data:[46, 16, 12, 7, 6]
+                },
+                {
+                    name:'Q&A',
+                    type:'line',
+                    data:[38, 17, 9, 5, 7]
+                },
+            ]
+        };        
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div class="part" id="class4-0" ></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('class4-0'),'macarons');
+
+        // 指定图表的配置项和数据
+        option = {
+            title: {
+                text: 'Class 4 Functions',
+                subtext:'Functions Relevant with Particular Scenarios'
+            },
+            tooltip: {
+                trigger: 'axis'
+            },
+            legend: {
+                data:['Flashlight','Video calls','Notes','Restaurant','Ride sharing','Reminders','Email','Translation'],
+                top: '50',
+                width:'150',
+                left:'450',
+                orient: 'vertical',
+                align:'left'
+            },
+            grid: {
+                left: '3%',
+                right: '160',
+                bottom: '3%',
+                containLabel: true
+            },
+            toolbox: {
+                feature: {
+                    saveAsImage: {}
+                }
+            },
+            xAxis: {
+                type: 'category',
+                boundaryGap: false,
+                data: ['everyday','once for 2 or 3 days','once a week','less than once a week','rarely','Do not use']
+            },
+            yAxis: {
+                type: 'value'
+            },
+            series: [
+                {
+                    name:'Flashlight',
+                    type:'line',
+                    data:[117, 64, 45, 27, 25, 344]
+                },
+                {
+                    name:'Video calls',
+                    type:'line',
+                    data:[93, 73, 43, 36, 22, 355]
+                },
+                {
+                    name:'Notes',
+                    type:'line',
+                    data:[62, 58, 53, 19, 16, 414]
+                },
+                {
+                    name:'Restaurant',
+                    type:'line',
+                    data:[45, 74, 50, 38, 15, 400]
+                },
+                {
+                    name:'Ride sharing',
+                    type:'line',
+                    data:[25, 51, 62, 59, 23, 402]
+                },
+                {
+                    name:'Reminders',
+                    type:'line',
+                    data:[46, 38, 23, 20, 14, 481]
+                },
+                {
+                    name:'Email',
+                    type:'line',
+                    data:[48, 35, 27, 21, 19, 472]
+                },
+                {
+                    name:'Translation',
+                    type:'line',
+                    data:[37, 36, 24, 15, 6, 504]
+                }
+            ]
+        };        
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+
+   <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+   <div class="part" id="class4" ></div>
+   <script type="text/javascript">
+       // 基于准备好的dom，初始化echarts实例
+       var myChart = echarts.init(document.getElementById('class4'),'macarons');
+
+       // 指定图表的配置项和数据
+       option = {
+           title: {
+               text: 'Class 4 Functions',
+               subtext:'Functions Relevant with Particular Scenarios'
+           },
+           tooltip: {
+               trigger: 'axis'
+           },
+           legend: {
+               data:['Flashlight','Video calls','Notes','Restaurant','Ride sharing','Reminders','Email','Translation'],
+               top: '50',
+                width:'150',
+                left:'450',
+                orient: 'vertical',
+                align:'left'
+           },
+           grid: {
+               left: '3%',
+               right: '160',
+               bottom: '3%',
+               containLabel: true
+           },
+           toolbox: {
+               feature: {
+                   saveAsImage: {}
+               }
+           },
+           xAxis: {
+               type: 'category',
+               boundaryGap: false,
+               data: ['everyday','once for 2 or 3 days','once a week','less than once a week','rarely']
+           },
+           yAxis: {
+               type: 'value'
+           },
+           series: [
+               {
+                   name:'Flashlight',
+                   type:'line',
+                   data:[117, 64, 45, 27, 25]
+               },
+               {
+                   name:'Video calls',
+                   type:'line',
+                   data:[93, 73, 43, 36, 22]
+               },
+               {
+                   name:'Notes',
+                   type:'line',
+                   data:[62, 58, 53, 19, 16]
+               },
+               {
+                   name:'Restaurant',
+                   type:'line',
+                   data:[45, 74, 50, 38, 15]
+               },
+               {
+                   name:'Ride sharing',
+                   type:'line',
+                   data:[25, 51, 62, 59, 23]
+               },
+               {
+                   name:'Reminders',
+                   type:'line',
+                   data:[46, 38, 23, 20, 14]
+               },
+               {
+                   name:'Email',
+                   type:'line',
+                   data:[48, 35, 27, 21, 19]
+               },
+               {
+                   name:'Translation',
+                   type:'line',
+                   data:[37, 36, 24, 15, 6]
+               }
+           ]
+       };        
+       // 使用刚指定的配置项和数据显示图表。
+       myChart.setOption(option);
+   </script>
+   </div>
+
+    <div class="block">
+    <div class="subtitle"><h2 style="font-size:30px;">Functions Used by Speech</h2></div>
+    <div class="original" id="speechTotal"></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('speechTotal'),'macarons');
+
+        // 指定图表的配置项和数据
+        option = {
+            title: {
+                text: 'Frequency Distribution of All Functions',
+                left: 'center'
+            },
+            tooltip: {
+                trigger: 'axis'
+            },
+            legend: {
+                data:['Instant messaging','Alarm','Making a call','Weather','Messages','Music','Web Search','Chatting','Maps','Video calls'],
+                top: '50',
+                width: '150',
+                left:'1050',
+                orient: 'vertical'
+            },
+            grid: {
+                left: '3%',
+                right: '160',
+                bottom: '3%',
+                containLabel: true
+            },
+            toolbox: {
+                feature: {
+                    saveAsImage: {}
+                }
+            },
+            xAxis: {
+                type: 'category',
+                boundaryGap: false,
+                data: ['5','4','3','2','1','0']
+            },
+            yAxis: {
+                type: 'value'
+            },
+            series: [
+                {
+                    name:'Instant messaging',
+                    type:'line',
+                    data:[18, 7, 0, 1, 1, 155]
+                },
+                {
+                    name:'Making a call',
+                    type:'line',
+                    data:[46, 15, 9, 7, 5, 100]
+                },
+                {
+                    name:'Alarm',
+                    type:'line',
+                    data:[18, 7, 5, 2, 0, 150]
+                },
+                {
+                    name:'Weather',
+                    type:'line',
+                    data:[15, 4, 3, 4, 2, 154]
+                },
+                {
+                    name:'Web Search',
+                    type:'line',
+                    data:[11, 11, 4, 6, 1, 149]
+                },
+                {
+                    name:'Music',
+                    type:'line',
+                    data:[20, 12, 2, 2, 3, 143]
+                },
+                {
+                    name:'Messages',
+                    type:'line',
+                    data:[27, 15, 3, 4, 3, 130]
+                },
+                {
+                    name:'Maps',
+                    type:'line',
+                    data:[10, 8, 6, 3, 7, 148]
+                },
+                {
+                    name:'Video calls',
+                    type:'line',
+                    data:[11, 13, 5, 8, 1, 144]
+                },
+                {
+                    name:'Chatting',
+                    type:'line',
+                    data:[17, 10, 10, 7, 9, 129]
+                }
+            ]
+        };        
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+    
+    <div class="part" id="speechclass1-0"></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('speechclass1-0'),'macarons');
+
+        // 指定图表的配置项和数据
+        option = {
+            title: {
+                text: 'Class 1 Functions',
+                subtext:'Functions Used Relatively Commonly'
+            },
+            tooltip: {
+                trigger: 'axis'
+            },
+            legend: {
+                data:['Instant messaging','Alarm','Making a call','Weather','Messages','Music'],
+                top: '50',
+                width: '150',
+                left:'450',
+                orient: 'vertical'
+            },
+            grid: {
+                left: '3%',
+                right: '160',
+                bottom: '3%',
+                containLabel: true
+            },
+            toolbox: {
+                feature: {
+                    saveAsImage: {}
+                }
+            },
+            xAxis: {
+                type: 'category',
+                boundaryGap: false,
+                data: ['5','4','3','2','1','0']
+            },
+            yAxis: {
+                type: 'value'
+            },
+            series: [
+                {
+                    name:'Instant messaging',
+                    type:'line',
+                    data:[18, 7, 0, 1, 1, 155]
+                },
+                {
+                    name:'Making a call',
+                    type:'line',
+                    data:[46, 15, 9, 7, 5, 100]
+                },
+                {
+                    name:'Alarm',
+                    type:'line',
+                    data:[18, 7, 5, 2, 0, 150]
+                },
+                {
+                    name:'Weather',
+                    type:'line',
+                    data:[15, 4, 3, 4, 2, 154]
+                },
+                {
+                    name:'Music',
+                    type:'line',
+                    data:[20, 12, 2, 2, 3, 143]
+                },
+                {
+                    name:'Messages',
+                    type:'line',
+                    data:[27, 15, 3, 4, 3, 130]
+                }
+            ]
+        };        
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+
+    <div class="part" id="speechclass1"></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('speechclass1'),'macarons');
+
+        // 指定图表的配置项和数据
+        option = {
+            title: {
+                text: 'Class 1 Functions',
+                subtext:'Functions Used Relatively Commonly'
+            },
+            tooltip: {
+                trigger: 'axis'
+            },
+            legend: {
+                data:['Instant messaging','Alarm','Making a call','Weather','Messages','Music'],
+                top: '50',
+                width: '150',
+                left:'450',
+                orient: 'vertical'
+            },
+            grid: {
+                left: '3%',
+                right: '160',
+                bottom: '3%',
+                containLabel: true
+            },
+            toolbox: {
+                feature: {
+                    saveAsImage: {}
+                }
+            },
+            xAxis: {
+                type: 'category',
+                boundaryGap: false,
+                data: ['5','4','3','2','1',]
+            },
+            yAxis: {
+                type: 'value'
+            },
+            series: [
+                {
+                    name:'Instant messaging',
+                    type:'line',
+                    data:[18, 7, 0, 1, 1]
+                },
+                {
+                    name:'Making a call',
+                    type:'line',
+                    data:[46, 15, 9, 7, 5]
+                },
+                {
+                    name:'Alarm',
+                    type:'line',
+                    data:[18, 7, 5, 2, 0]
+                },
+                {
+                    name:'Weather',
+                    type:'line',
+                    data:[15, 4, 3, 4, 2]
+                },
+                {
+                    name:'Music',
+                    type:'line',
+                    data:[20, 12, 2, 2, 3]
+                },
+                {
+                    name:'Messages',
+                    type:'line',
+                    data:[27, 15, 3, 4, 3]
+                }
+            ]
+        };        
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+    
+    <div class="part" id="speechclass2-0"></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('speechclass2-0'),'macarons');
+
+        // 指定图表的配置项和数据
+        option = {
+            title: {
+                text: 'Class 2 Functions',
+                subtext:'Functions with Distributed Frequency Distributions'
+            },
+            tooltip: {
+                trigger: 'axis'
+            },
+            legend: {
+                data:['Web Search','Chatting','Maps','Video calls'],
+                top: '50',
+                width: '150',
+                left:'450',
+                orient: 'vertical'
+            },
+            grid: {
+                left: '3%',
+                right: '160',
+                bottom: '3%',
+                containLabel: true
+            },
+            toolbox: {
+                feature: {
+                    saveAsImage: {}
+                }
+            },
+            xAxis: {
+                type: 'category',
+                boundaryGap: false,
+                data: ['5','4','3','2','1','0']
+            },
+            yAxis: {
+                type: 'value'
+            },
+            series: [
+                {
+                    name:'Web Search',
+                    type:'line',
+                    data:[11, 11, 4, 6, 1, 149]
+                },
+                {
+                    name:'Maps',
+                    type:'line',
+                    data:[10, 8, 6, 3, 7, 148]
+                },
+                {
+                    name:'Video calls',
+                    type:'line',
+                    data:[11, 13, 5, 8, 1, 144]
+                },
+                {
+                    name:'Chatting',
+                    type:'line',
+                    data:[17, 10, 10, 7, 9, 129]
+                }
+            ]
+        };        
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+
+<div class="part" id="speechclass2"></div>
+<script type="text/javascript">
+    // 基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById('speechclass2'),'macarons');
+
+    // 指定图表的配置项和数据
+    option = {
+        title: {
+            text: 'Class 2 Functions',
+            subtext:'Functions with Distributed Frequency Distributions'
+        },
+        tooltip: {
+            trigger: 'axis'
+        },
+        legend: {
+            data:['Web Search','Chatting','Maps','Video calls'],
+            top: '50',
+            width: '150',
+            left:'450',
+            orient: 'vertical'
+        },
+        grid: {
+            left: '3%',
+            right: '160',
+            bottom: '3%',
+            containLabel: true
+        },
+        toolbox: {
+            feature: {
+                saveAsImage: {}
+            }
+        },
+        xAxis: {
+            type: 'category',
+            boundaryGap: false,
+            data: ['5','4','3','2','1']
+        },
+        yAxis: {
+            type: 'value'
+        },
+        series: [
+            {
+                name:'Web Search',
+                type:'line',
+                data:[11, 11, 4, 6, 1]
+            },
+            {
+                name:'Maps',
+                type:'line',
+                data:[10, 8, 6, 3, 7]
+            },
+            {
+                name:'Video calls',
+                type:'line',
+                data:[11, 13, 5, 8, 1]
+            },
+            {
+                name:'Chatting',
+                type:'line',
+                data:[17, 10, 10, 7, 9]
+            }
+        ]
+    };        
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+</script>
+   </div>
+
+<div class="block">
+    <div class="subtitle">
+        <h2 style="font-size:30px;">Participants Classification</h2>
+    </div>
+    <div class="original" id="participants"></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('participants'),'macarons');
+    
+        // 指定图表的配置项和数据
+        option = {
+            title : {
+                text: 'Participants Classification',
+                x:'center'
+            },
+            tooltip : {
+                trigger: 'item',
+                formatter: "{a} <br/>{b} : {c} ({d}%)"
+            },
+            legend: {
+                orient: 'vertical',
+                left: 'left',
+                data: ['Type 1: Never heard of the speech interaction','Type 2: Heard of it but never use it','Type 3: Gave up after tryout','Type 4: Use speech interaction']
+            },
+            series : [
+                {
+                    name: 'Participants Classification',
+                    type: 'pie',
+                    radius : '55%',
+                    center: ['50%', '60%'],
+                    label: {
+                        normal:{
+                            formatter: "{b} \n  \n {c} ({d}%)"
+                        }
+                    },
+                    data:[
+                        {value:93, name:'Type 1: Never heard of the speech interaction'},
+                        {value:224, name:'Type 2: Heard of it but never use it'},
+                        {value:113, name:'Type 3: Gave up after tryout'},
+                        {value:182, name:'Type 4: Use speech interaction'},
+                    ],
+                    itemStyle: {
+                        emphasis: {
+                            shadowBlur: 10,
+                            shadowOffsetX: 0,
+                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                        }
+                    }
+                }
+            ]
+        };
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+</div>
+
+<div class="block">
+    <div class="subtitle">
+        <h2 style="font-size:30px;">Type 2: Heard of Speech Interaction but Never Use It</h2>
+    </div>
+    <div class="original" id="type2reason"></div>
+    <script type="text/javascript">
+        var myChart = echarts.init(document.getElementById('type2reason'),'macarons');
+
+    option = {
+        tooltip : {
+            trigger: 'axis',
+            axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+                type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+                    }
+                },
+        legend: {
+            data: ['5', '4','3','2','1']
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis:  {
+            type: 'value'
+        },
+        yAxis: {
+            type: 'category',
+            // data: ['type2r1','type2r3','type2r5','type2r8','type2r4','type2r9','type2r7','type2r2','type2r6']
+            data: ['type2r6','type2r2','type2r7','type2r9','type2r4','type2r8','type2r5','type2r3','type2r2']
+        },
+        series: [
+            {
+                name: '5',
+                type: 'bar',
+                stack: '总量',
+                label: {
+                    normal: {
+                        show: false,
+                        position: 'insideRight'
+                    }
+                },
+                data: [1,0,2,2,4,5,2,4,33]
+            },
+            {
+                name: '4',
+                type: 'bar',
+                stack: '总量',
+                label: {
+                    normal: {
+                        show: false,
+                        position: 'insideRight'
+                    }
+                },
+                data: [1, 0, 0, 5, 8, 7, 8, 8, 13]
+            },
+            {
+                name: '3',
+                type: 'bar',
+                stack: '总量',
+                label: {
+                    normal: {
+                        show: false,
+                        position: 'insideRight'
+                    }
+                },
+                data: [1, 2, 6, 5, 4, 11, 7, 16, 26]
+            },
+            {
+                name: '2',
+                type: 'bar',
+                stack: '总量',
+                label: {
+                    normal: {
+                        show: false,
+                        position: 'insideRight'
+                    }
+                },
+                data: [0, 5, 5, 6, 12, 9, 18, 15, 8]
+            },
+            {
+                name: '1',
+                type: 'bar',
+                stack: '总量',
+                label: {
+                    normal: {
+                        show: false,
+                        position: 'insideRight'
+                    }
+                },
+                data: [1, 7, 14, 11, 12, 19, 16, 19, 96]
+            }
+        ]
+    };
+    myChart.setOption(option);
+    </script>
+        <div class="table" id="tabletype2">
+            <table>
+                <tr>
+                    <td>type2r1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>	
+                    <td>Accustomed to manual operation, don’t want to use speech interaction.</td>
+                </tr>
+                <tr>
+                    <td>type2r2      </td>
+                    <td>I don't know if my phone can use speech interaction.</td>
+                </tr>
+                <tr>
+                    <td>type2r3      </td>
+                    <td>I don't know what I can do by speech interac-tion or I don't know what to say.</td>
+                </tr>
+                <tr>
+                    <td>type2r4      </td>
+                    <td>I don't trust the speech interaction. (I think it can't understand what I'm saying).</td>
+                </tr>
+                <tr>
+                    <td>type2r5      </td>
+                    <td>It feels awkward to use speech interaction, so I never tried.</td>
+                </tr>
+                <tr>
+                    <td>type2r6      </td>
+                    <td>My phone doesn’t have a voice system.</td>
+                </tr>
+                <tr>
+                    <td>type2r7      </td>
+                    <td>I am worried about consuming too much cellu-lar data.</td>
+                </tr>
+                <tr>
+                    <td>type2r8      </td>
+                    <td>I don't want people around me to know what I'm doing.</td>
+                </tr>
+                <tr>
+                    <td>type2r9      </td>
+                    <td>I'm worried that my privacy information might leak, like my voice or my location.</td>
+                </tr>
+            </table>
+        </div>
+</div>
+
+<div class="block">
+    <div class="subtitle">
+        <h2 style="font-size:30px;">Type 3: Give up Speech Interaction after Tryout</h2>
+    </div>
+    <div class="original" id="type3reason"></div>
+    <script type="text/javascript">
+        var myChart = echarts.init(document.getElementById('type3reason'),'macarons');
+
+    option = {
+        tooltip : {
+            trigger: 'axis',
+            axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+                type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+                    }
+                },
+        legend: {
+            data: ['5', '4','3','2','1']
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis:  {
+            type: 'value'
+        },
+        yAxis: {
+            type: 'category',
+            data: ['type3r5','type3r16','type3r17','type3r15','type3r4','type3r11','type3r7','type3r13','type3r2','type3r9','type3r14','type3r12','type3r8','type3r6','type3r10','type3r1','type3r3']
+        },
+        series: [
+            {
+                name: '5',
+                type: 'bar',
+                stack: '总量',
+                label: {
+                    normal: {
+                        show: false,
+                        position: 'insideRight'
+                    }
+                },
+                data: [0, 0, 1, 1, 1, 0, 2, 3, 5, 4, 4, 5, 11, 8, 10, 15, 15]
+            },
+            {
+                name: '4',
+                type: 'bar',
+                stack: '总量',
+                label: {
+                    normal: {
+                        show: false,
+                        position: 'insideRight'
+                    }
+                },
+                data: [0, 0, 1, 3, 1, 5, 5, 4, 1, 3, 4, 8, 4, 6, 8, 11, 7]
+            },
+            {
+                name: '3',
+                type: 'bar',
+                stack: '总量',
+                label: {
+                    normal: {
+                        show: false,
+                        position: 'insideRight'
+                    }
+                },
+                data: [0, 1, 2, 5, 6, 8, 4, 6, 6, 8, 8, 11, 7, 12, 11, 12, 15]
+            },
+            {
+                name: '2',
+                type: 'bar',
+                stack: '总量',
+                label: {
+                    normal: {
+                        show: false,
+                        position: 'insideRight'
+                    }
+                },
+                data: [2, 5, 5, 2, 8, 2, 4, 2, 7, 3, 6, 2, 6, 8, 5, 5, 10]
+            },
+            {
+                name: '1',
+                type: 'bar',
+                stack: '总量',
+                label: {
+                    normal: {
+                        show: false,
+                        position: 'insideRight'
+                    }
+                },
+                data: [2, 2, 3, 4, 2, 3, 6, 3, 5, 6, 9, 6, 6, 4, 3, 10, 10]
+            }
+        ]
+    };
+    myChart.setOption(option);
+    </script>
+    <div class="table" id="tabletype3">
+        <table>
+            <tr>
+                <td>type3r1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>	
+                <td>Accustomed to manual operation, don’t want to use speech interaction</td>
+            </tr>
+            <tr>
+                <td>type3r2      </td>
+                <td>I don't know what I can do by speech interaction or I don't know what to say</td>
+            </tr>
+            <tr>
+                <td>type3r3      </td>
+                <td>It's awkward to use speech interaction on most occasions because I am afraid of interfering with others or drawing others’ attention.</td>
+            </tr>
+            <tr>
+                <td>type3r4      </td>
+                <td>I need network to use speech interaction, but I don’t have network at any time </td>
+            </tr>
+            <tr>
+                <td>type3r5      </td>
+                <td>Often prompts the network to be unable to connect.</td>
+            </tr>
+            <tr>
+                <td>type3r6      </td>
+                <td>The way to trigger the speech interaction is too deliberate, and I always can't think of it.</td>
+            </tr>
+            <tr>
+                <td>type3r7      </td>
+                <td>The waiting time is too long when the speech interaction is triggered.</td>
+            </tr>
+            <tr>
+                <td>type3r8      </td>
+                <td>I always will speak slowly when I use speech interaction, and pay attention to my pronunciation.</td>
+            </tr>
+            <tr>
+                <td>type3r9      </td>
+                <td>It can't translate voice into text correctly when I use speech interaction.</td>
+            </tr>
+            <tr>
+                <td>type3r10     </td>
+                <td>It always gives an irrelevant answer (or an answer that is not what I want) when I use speech interaction.</td>
+            </tr>
+            <tr>
+                <td>type3r11     </td>
+                <td>The pronunciation of the feedback is unnatural and sounds strange.</td>
+            </tr>
+            <tr>
+                <td>type3r12     </td>
+                <td>Can't finish the function I want by speech interaction.</td>
+            </tr>
+            <tr>
+                <td>type3r13     </td>
+                <td>It always gives an unsuitable answer (or an answer that is not suit the situation or culture).</td>
+            </tr>    
+            <tr>
+                <td>type3r14     </td>
+                <td>It's always a misoperation to trigger speech interaction when it doesn't need it.</td>
+            </tr>
+            <tr>
+                <td>type3r15     </td>
+                <td>The answers given are not enough to attract me when I use speech interaction.</td>
+            </tr>
+            <tr>
+                <td>type3r16     </td>
+                <td>I am worried about consuming too much cellular data.</td>
+            </tr>
+            <tr>
+                <td>type3r17     </td>
+                <td>I'm worried that my privacy information might leak, like my voice or my location.</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div class="block">
+    <div class="subtitle">
+        <h2 style="font-size:30px;">Type 4: Use speech interaction</h2>
+    </div>
+    <div class="original" id="type4reason"></div>
+    <script type="text/javascript">
+        var myChart = echarts.init(document.getElementById('type4reason'),'macarons');
+
+    option = {
+        tooltip : {
+            trigger: 'axis',
+            axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+                type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+                    }
+                },
+        legend: {
+            data: ['5', '4','3','2','1']
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis:  {
+            type: 'value'
+        },
+        yAxis: {
+            type: 'category',
+            data: ['type4r4','type4r1','type4r5','type4r16','type4r7','type4r17','type4r10','type4r13','type4r12','type4r14','type4r6','type4r15','type4r11','type4r3','type4r9','type4r8','type4r2']
+        },
+        series: [
+            {
+                name: '5',
+                type: 'bar',
+                stack: '总量',
+                label: {
+                    normal: {
+                        show: false,
+                        position: 'insideRight'
+                    }
+                },
+                data: [1, 1, 1, 1, 1, 2, 1, 2, 0, 0, 2, 2, 4, 0, 2, 1, 7]
+            },
+            {
+                name: '4',
+                type: 'bar',
+                stack: '总量',
+                label: {
+                    normal: {
+                        show: false,
+                        position: 'insideRight'
+                    }
+                },
+                data: [2, 1, 4, 1, 1, 2, 3, 6, 4, 3, 6, 5, 8, 3, 7, 6, 12]
+            },
+            {
+                name: '3',
+                type: 'bar',
+                stack: '总量',
+                label: {
+                    normal: {
+                        show: false,
+                        position: 'insideRight'
+                    }
+                },
+                data: [2, 3, 1, 3, 6, 6, 6, 6, 7, 9, 10, 11, 12, 11, 15, 8, 12]
+            },
+            {
+                name: '2',
+                type: 'bar',
+                stack: '总量',
+                label: {
+                    normal: {
+                        show: false,
+                        position: 'insideRight'
+                    }
+                },
+                data: [3, 3, 5, 6, 4, 3, 7, 7, 7, 8, 5, 8, 8, 11, 9, 9, 13]
+            },
+            {
+                name: '1',
+                type: 'bar',
+                stack: '总量',
+                label: {
+                    normal: {
+                        show: false,
+                        position: 'insideRight'
+                    }
+                },
+                data: [5, 7, 8, 8, 8, 7, 8, 5, 9, 12, 12, 10, 12, 20, 15, 25, 16]
+            }
+        ]
+    };
+    myChart.setOption(option);
+    </script>
+    <div class="table" id="tabletype4">
+        <table>
+            <tr>
+                <td>type4r1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>	
+                <td>I don't know what I can do by speech interaction or I don't know what to say.</td>
+            </tr>
+            <tr>
+                <td>type4r2      </td>
+                <td>It's awkward to use speech interaction on most occasions because I am afraid of interfering with others or drawing others’ attention.</td>
+            </tr>
+            <tr>
+                <td>type4r3      </td>
+                <td>’I need network to use speech interaction, but I don’t have network at any time.</td>
+            </tr>
+            <tr>
+                <td>type4r4      </td>
+                <td>Often prompts the network to be unable to connect.</td>
+            </tr>
+            <tr>
+                <td>type4r5      </td>
+                <td>The way to trigger the speech interaction is too deliberate, and I always can't think of it.</td>
+            </tr>
+            <tr>
+                <td>type4r6      </td>
+                <td>It's always a misoperation to trigger speech interaction when it doesn't need it.</td>
+            </tr>
+            <tr>
+                <td>type4r7      </td>
+                <td>I feel that using speech interaction interrupts me to use other functions.</td>
+            </tr>
+            <tr>
+                <td>type4r8      </td>
+                <td>I always will speak slowly when I use speech interaction, and pay attention to my pronunciation.</td>
+            </tr>
+            <tr>
+                <td>type4r9      </td>
+                <td>It can't translate voice into text correctly when I use speech interaction.</td>
+            </tr>
+            <tr>
+                <td>type4r10     </td>
+                <td>The speech interaction takes too much time when giving feedbacks.</td>
+            </tr>
+            <tr>
+                <td>type4r11     </td>
+                <td>It always gives an irrelevant answer (or an answer that is not what I want) when I use speech interaction.</td>
+            </tr>
+            <tr>
+                <td>type4r12     </td>
+                <td>The pronunciation of the feedback is unnatural and sounds strange.</td>
+            </tr>
+            <tr>
+                <td>type4r13     </td>
+                <td>Can't finish the function I want by speech interaction.</td>
+            </tr>    
+            <tr>
+                <td>type4r14     </td>
+                <td>It always gives an unsuitable answer (or an answer that is not suit the situation or culture).</td>
+            </tr>
+            <tr>
+                <td>type4r15     </td>
+                <td>The answers given are not enough to attract me when I use speech interaction.</td>
+            </tr>
+            <tr>
+                <td>type4r16     </td>
+                <td>I am worried about consuming too much cellular data.</td>
+            </tr>
+            <tr>
+                <td>type4r17     </td>
+                <td>I'm worried that my privacy information might leak, like my voice or my location.</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
